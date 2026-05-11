@@ -1,0 +1,2 @@
+# Hipotesis-teorica-sobre-nueva-fisica-de-NOA-Nodos-de-Orientacion-Angular-
+En este repositorio, pongo "la hipotesis teorica " sobre una nueva fisica basada en el universo como informacion, y subo una app conectada al servidor Australiano que ofrece numeros "aleatorios reales " con tu hardware cuantico para "intentar detectar " el sesgo informacional que provoca la conciencia humana en la observacion cuantica"
