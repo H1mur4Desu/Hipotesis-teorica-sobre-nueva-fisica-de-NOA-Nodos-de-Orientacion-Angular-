@@ -1,6 +1,10 @@
 # Proyecto DHS: Detección de Modulación Informacional Cuántica
 **Teoría de Nodos de Orientación Angular (NOA) y el Foco Explorador**
 
+> ⚠️ **DISCLAIMER: ESCENARIO HIPOTÉTICO Y EXPERIMENTO MENTAL**
+> Todo el contenido de este repositorio (documentación teórica, fórmulas y código) plantea un escenario **estrictamente hipotético y teórico**. Es un ejercicio de imaginación (un "¿Qué pasaría si...?"). Aunque el texto esté redactado con afirmaciones categóricas por cuestiones de estilo y narrativa, **no pretende presentarse como una verdad absoluta** ni como un modelo científico comprobado. Es una exploración especulativa nacida de la curiosidad, cuyo objetivo principal ha sido aprender física teórica, programación en Python y recolección de datos cuánticos.
+>
+> 
 ## 🌌 Sobre el Proyecto
 Este repositorio contiene el código fuente y la base teórica del experimento diseñado para aislar y medir el parámetro de acoplamiento débil ($\gamma_{12}$) postulado en la **Cosmología Informacional Unificada**. 
 
