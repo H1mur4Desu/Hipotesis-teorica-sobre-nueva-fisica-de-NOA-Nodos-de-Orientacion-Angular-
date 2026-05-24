@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Ontológico: Cosmología Informacional Unificada</title>
+<style>
+    body { 
+        background-color: #0d1117; 
+        color: #c9d1d9; 
+        font-family: 'Consolas', 'Courier New', monospace; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        min-height: 100vh; 
+        margin: 0; 
+        padding: 40px 20px;
+    }
+    .container { 
+        text-align: center; 
+        max-width: 1000px; 
+        width: 100%; 
+    }
+    h2 {
+        color: #58a6ff;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 15px;
+    }
+    p.subtitle {
+        color: #8b949e;
+        margin-bottom: 40px;
+        font-style: italic;
+    }
+    svg { 
+        width: 100%; 
+        height: auto; 
+        background-color: #161b22; 
+        border-radius: 8px; 
+        border: 1px solid #30363d;
+    }
+    .box { 
+        fill: #0d1117; 
+        stroke: #58a6ff; 
+        stroke-width: 1.5; 
+        transition: all 0.3s;
+    }
+    .box:hover {
+        fill: #1f242c;
+        stroke: #79c0ff;
+        filter: drop-shadow(0 0 10px rgba(88, 166, 255, 0.3));
+    }
+    .box-ci { stroke: #bc8cff; } /* Campo de intención en morado */
+    .box-ci:hover { stroke: #d2a8ff; filter: drop-shadow(0 0 10px rgba(188, 140, 255, 0.3)); }
+    
+    .box-emergence { stroke: #3fb950; } /* Realidad física en verde */
+    .box-emergence:hover { stroke: #56d364; filter: drop-shadow(0 0 10px rgba(63, 185, 80, 0.3)); }
+
+    .title { fill: #f0f6fc; font-size: 16px; font-weight: bold; pointer-events: none; }
+    .desc { fill: #8b949e; font-size: 12px; pointer-events: none; }
+    .formula { fill: #79c0ff; font-size: 13px; font-family: serif; font-style: italic; pointer-events: none; }
+    .formula-ci { fill: #d2a8ff; }
+    .formula-em { fill: #56d364; }
+
+    .link { stroke: #30363d; stroke-width: 2; fill: none; }
+    .link-active { 
+        stroke: #58a6ff; 
+        stroke-width: 2; 
+        stroke-dasharray: 5,5; 
+        animation: flow 15s linear infinite; 
+    }
+    .link-ci { stroke: #bc8cff; stroke-dasharray: 4,4; animation: flow-reverse 15s linear infinite; }
+    
+    @keyframes flow { to { stroke-dashoffset: -500; } }
+    @keyframes flow-reverse { to { stroke-dashoffset: 500; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Cosmología Informacional Unificada</h2>
+    <p class="subtitle">Estructura Global del Deep Hilbert Space y la Dinámica de la Consciencia</p>
+    
+    <svg viewBox="0 0 1000 950" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#58a6ff" />
+            </marker>
+            <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#bc8cff" />
+            </marker>
+            <marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#3fb950" />
+            </marker>
+        </defs>
+
+        <path d="M 500 160 L 500 220" class="link-active" marker-end="url(#arrow-blue)"/>
+        
+        <path d="M 800 290 L 800 350" class="link-ci" marker-end="url(#arrow-purple)"/>
+        <path d="M 670 410 L 580 410" class="link-ci" marker-end="url(#arrow-purple)"/>
+        
+        <path d="M 500 480 L 500 540" class="link-active" marker-end="url(#arrow-blue)"/>
+        
+        <path d="M 500 660 L 500 700" class="link"/>
+        <path d="M 500 700 L 250 700 L 250 740" class="link-active" marker-end="url(#arrow-green)"/>
+        <path d="M 500 700 L 750 700 L 750 740" class="link-active" marker-end="url(#arrow-blue)"/>
+
+        <path d="M 120 600 C 50 600 50 100 800 100" class="link-ci" marker-end="url(#arrow-purple)"/>
+        <text x="60" y="350" class="desc" fill="#bc8cff" transform="rotate(-90 60,350)">Bucle de Retroalimentación (Observación)</text>
+
+        <rect x="200" y="40" width="600" height="120" rx="4" class="box"/>
+        <text x="500" y="70" text-anchor="middle" class="title">DEEP HILBERT SPACE (DHS)</text>
+        <text x="500" y="90" text-anchor="middle" class="desc">Plano Fundamental | Tejido de Relaciones Informacionales (10D)</text>
+        <text x="500" y="110" text-anchor="middle" class="formula">ds² = Σ dθᵢ²  |  R · R⁻¹ = 1 (Hiperesfera Inversa)</text>
+        <text x="500" y="130" text-anchor="middle" class="desc">Constituyentes: Nodos de Orientación Angular (NOA) - Álgebra de Jordan</text>
+
+        <rect x="670" y="190" width="260" height="100" rx="4" class="box box-ci"/>
+        <text x="800" y="220" text-anchor="middle" class="title" fill="#d2a8ff">CAMPO DE INTENCIÓN (CI)</text>
+        <text x="800" y="240" text-anchor="middle" class="desc">"Observador Último" | Adimensional</text>
+        <text x="800" y="260" text-anchor="middle" class="formula formula-ci">S_CI &lt; 0 (Entropía Negativa)</text>
+        <text x="800" y="280" text-anchor="middle" class="desc">Red de consciencias conectadas</text>
+
+        <rect x="670" y="350" width="260" height="120" rx="4" class="box box-ci"/>
+        <text x="800" y="380" text-anchor="middle" class="title" fill="#d2a8ff">NÚCLEO RESONANTE</text>
+        <text x="800" y="400" text-anchor="middle" class="desc">Mecanismo de acoplamiento (Kriptón)</text>
+        <text x="800" y="420" text-anchor="middle" class="formula formula-ci">Operador: Ĉ = ∫ K(x,y) ρ(x) φ_CI(y)</text>
+        <text x="800" y="440" text-anchor="middle" class="desc">Modificación de la Probabilidad Cuántica</text>
+        <text x="800" y="460" text-anchor="middle" class="formula formula-ci">P'(s) = P(s) exp(γ_Kr C(s)) / Z'</text>
+
+        <rect x="250" y="220" width="330" height="260" rx="4" class="box"/>
+        <text x="415" y="260" text-anchor="middle" class="title">DINÁMICA DE PROCESAMIENTO</text>
+        
+        <text x="415" y="300" text-anchor="middle" class="formula">Función Generadora WOA:</text>
+        <text x="415" y="320" text-anchor="middle" class="formula">Ψ(θ,t) = A · sin(2π φ t + θ₀)</text>
+        <text x="415" y="340" text-anchor="middle" class="desc">Frecuencia Base: φ₁₂ = 10368 Hz</text>
+
+        <text x="415" y="380" text-anchor="middle" class="desc">El Tiempo como Ángulo de Fase:</text>
+        <text x="415" y="400" text-anchor="middle" class="formula">Δt = θ_ij = ∠(O_i, O_j)</text>
+        
+        <text x="415" y="440" text-anchor="middle" class="desc">Evolución de Estado (Acoplamiento):</text>
+        <text x="415" y="460" text-anchor="middle" class="formula">Ĥ_eff = Ĥ₀ + γ_Kr Ĉ</text>
+
+        <rect x="120" y="540" width="760" height="120" rx="4" class="box box-emergence"/>
+        <text x="500" y="570" text-anchor="middle" class="title" fill="#56d364">REALIDAD FÍSICA PROYECTADA (M_4)</text>
+        <text x="500" y="590" text-anchor="middle" class="desc">Proyección Dimensional π: DHS → M_4 (Eliminación de Paradojas Causales / CTCs)</text>
+        <text x="500" y="620" text-anchor="middle" class="formula formula-em">MATERIA = Nodos Estacionarios de Interferencia ( ∂/∂t |Σ Ψ_i|² = 0 )</text>
+        <text x="500" y="640" text-anchor="middle" class="desc">Decoherencia Ambiental + Percepción del Observador</text>
+
+        <rect x="100" y="740" width="300" height="120" rx="4" class="box box-emergence"/>
+        <text x="250" y="770" text-anchor="middle" class="title" fill="#56d364">GEOMETRÍA Y GRAVEDAD</text>
+        <text x="250" y="790" text-anchor="middle" class="desc">Gradiente de Densidad de NOA</text>
+        <text x="250" y="810" text-anchor="middle" class="formula formula-em">g = -∇ ρ_I</text>
+        <text x="250" y="830" text-anchor="middle" class="desc">Velocidad de la luz variable (c_local)</text>
+
+        <rect x="600" y="740" width="300" height="120" rx="4" class="box"/>
+        <text x="750" y="770" text-anchor="middle" class="title">TECNOLOGÍA (PDI)</text>
+        <text x="750" y="790" text-anchor="middle" class="desc">Propulsor de Desplazamiento Informacional</text>
+        <text x="750" y="810" text-anchor="middle" class="formula">Navegación por Líneas de Sincronía (LS)</text>
+        <text x="750" y="830" text-anchor="middle" class="desc">Burbuja de Incoherencia (Arreglo Dodecaédrico)</text>
+
+    </svg>
+</div>
+
+</body>
+</html>
